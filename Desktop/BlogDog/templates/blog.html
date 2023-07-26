@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+{{blog.title}}
+{% endblock title %}
+{% block blog %}
+<div class="w3-card-4 w3-margin w3-white">  
+    <img src="/{{blog.image}}" alt="Nature" style="width:100%">
+      <div class="w3-container">
+        <h3><b>{{blog.title}}</b></h3>
+        <h5>{{blog.desc}} <span class="w3-opacity">{{blog.date}}</span></h5>
+      </div>
+  
+      <div class="w3-container">
+        <p>{{blog.content}}</p>
+        <div class="w3-row">
+          
+          
+        </div>
+      </div>
+    </div>
+  <hr> 
+{% endblock blog %}
+
